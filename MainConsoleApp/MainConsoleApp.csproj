@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<Version>2.0.2</Version>
+    <Authors>Oliver Matle</Authors>
+	<Company />
+	<AssemblyName>TvHeadendRecordControlCli</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.9.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CliTvhRecControlCore\CliTvhRecControlCore.csproj" />
+    <ProjectReference Include="..\CliTvhRecControlDomain\CliTvhRecControlDomain.csproj" />
+    <ProjectReference Include="..\TvhAdapterSimulate\TvhAdapterSimulate.csproj" />
+    <ProjectReference Include="..\TvhAdapter\TvhAdapter.csproj" />
+  </ItemGroup>
+
+</Project>

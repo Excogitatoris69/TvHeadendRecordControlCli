@@ -1,0 +1,10 @@
+31.10.2024
+Projekt soll neue Version der Aufnahmesteuerung für tvbrowser sein.
+Neu ist:
+- neue Hexagonale Architektur
+- CleanCode
+- neue Funktionen
+
+
+
+

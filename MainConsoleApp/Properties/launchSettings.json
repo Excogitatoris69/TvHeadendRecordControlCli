@@ -1,0 +1,73 @@
+{
+  "profiles": {
+    "MainConsoleApp_01_Help": {
+      "commandName": "Project",
+      "commandLineArgs": "--help"
+    },
+    "MainConsoleApp_02_Serverinfo": {
+      "commandName": "Project",
+      "commandLineArgs": "--serverurl=http://ptvheadend:9981 --username=tvuser --password=tvuser --command=serverinfo"
+    },
+    "MainConsoleApp_03_DvrList": {
+      "commandName": "Project",
+      "commandLineArgs": "--serverurl=http://ptvheadend:9981 --username=tvuser --password=tvuser --command=dvrlist"
+    },
+    "MainConsoleApp_04_channellist": {
+      "commandName": "Project",
+      "commandLineArgs": "--serverurl=http://ptvheadend:9981 --username=tvuser --password=tvuser --command=channellist"
+    },
+    "MainConsoleApp_04_1_channellistraw": {
+      "commandName": "Project",
+      "commandLineArgs": "--serverurl=http://ptvheadend:9981 --username=tvuser --password=tvuser --command=channellistraw"
+    },
+    "MainConsoleApp_05_dvrProfillist": {
+      "commandName": "Project",
+      "commandLineArgs": "--serverurl=http://ptvheadend:9981 --username=tvuser --password=tvuser --command=dvrprofilelist"
+    },
+    "MainConsoleApp_06_dvrCreate": {
+      "commandName": "Project",
+      "commandLineArgs": "--serverurl http://ptvheadend:9981 --username tvuser --password tvuser --command dvrcreate  --title \"Testaufnahme1\"  --starttimeHuman \"20.11.2024 20:15\" --endtimeHuman \"20.11.2024 22:00\" --channel \"ZDF HD\" --config \"97993e21300bdbe066435bd0408d4328\" --comment \"add by record control\" "
+    },
+    "MainConsoleApp_07_dvrCreate": {
+      "commandName": "Project",
+      "commandLineArgs": "--serverurl http://ptvheadend:9981 --username tvuser --password tvuser --command dvrcreate  --title \"Testaufnahme1\"  --starttimeHuman \"20.11.2024 22:02\" --endtimeHuman \"20.11.2024 22:59\" --channel \"ZDF HD\" --config \"withoutPadding\" --comment \"add by record control\" "
+    },
+    "MainConsoleApp_08_dvrRemove": {
+      "commandName": "Project",
+      "commandLineArgs": "--serverurl=http://ptvheadend:9981 --username=tvuser --password=tvuser --command=dvrremove --uuid=6f0f57999af77307fe8e170e9bc9bade "
+    },
+    "MainConsoleApp_09_dvrRemove": {
+      "commandName": "Project",
+      "commandLineArgs": "--serverurl=http://ptvheadend:9981 --username=tvuser --password=tvuser --command=dvrremove --starttime 1731266100 --channel \"SAT.1\" "
+    },
+    "MainConsoleApp_10_stream": {
+      "commandName": "Project",
+      "commandLineArgs": "--serverurl=http://ptvheadend:9981 --username=tvuser --password=tvuser --command=livestream --channel \"SAT.1\" --streamplayer \"D:\\Program Files (x86)\\VLC Plus Player\\vlc.exe, --one-instance\" "
+    },
+
+
+    "MainConsoleApp_11_addCredential": {
+      "commandName": "Project",
+      "commandLineArgs": "--serverurl=http://ptvheadend:9981 --username=tvuser --password=tvuser --command=savecredential --credentialname=tvuser "
+    },
+    "MainConsoleApp_12_changeCredential": {
+      "commandName": "Project",
+      "commandLineArgs": "--serverurl=http://ptvheadend:9981 --username=tvuser2 --password=tvuser --command=savecredential --credentialname=tvuser "
+    },
+    "MainConsoleApp_13_listCredential": {
+      "commandName": "Project",
+      "commandLineArgs": "--command=credentiallist"
+    },
+    "MainConsoleApp_14_removeCredential": {
+      "commandName": "Project",
+      "commandLineArgs": "--command=removecredential --credentialname=tvuser "
+    },
+
+
+    "MainConsoleApp_15_channellist": {
+      "commandName": "Project",
+      "commandLineArgs": "--command=channellist --credentialname=tvuser"
+    }
+
+  }
+}
