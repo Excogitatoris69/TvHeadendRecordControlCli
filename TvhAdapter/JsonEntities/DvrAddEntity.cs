@@ -30,7 +30,7 @@ namespace TvhAdapter.JsonEntities
         [JsonPropertyName("subtitle")]
         public MultilingualText subtitle { get; set; }
 
-        [JsonPropertyName("description ")]
+        [JsonPropertyName("description")]
         public MultilingualText description { get; set; }
 
         [JsonPropertyName("comment")]
@@ -38,5 +38,14 @@ namespace TvhAdapter.JsonEntities
 
         [JsonPropertyName("config_name")]
         public string dvrProfileUuid { get; set; }
+
+        [JsonPropertyName("disp_extratext")]
+        public string dispExtratext { get; set; }
+
+        [JsonPropertyName("disp_description")]
+        public string dispDescription { get; set; }
+
+        [JsonPropertyName("disp_subtitle")]
+        public string dispSubtitle { get; set; }
     }
 }

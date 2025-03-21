@@ -23,6 +23,8 @@ namespace CliTvhRecControlCore.Interfaces
         public TvHDvrProfileDto getDvrConfigByNameOrUuid(string nameOrUuid);
         public string getStreamUrlOfChannel(string channelUuid);
 
+        public void getDvrEntryClass();
+
         //future todos:
         //public TvHResponseDto cancelRunningDvr(TvHDvrUpcomingDto tvHDvrUpcomingDto);
         //public List<TvHDvrUpcomingDto> getFinishedRecordingslist();

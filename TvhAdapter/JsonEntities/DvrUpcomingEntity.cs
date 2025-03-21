@@ -21,6 +21,21 @@ namespace TvhAdapter.JsonEntities
         [JsonPropertyName("title")]
         public MultilingualText title { get; set; }
 
+        [JsonPropertyName("description")]
+        public MultilingualText description { get; set; }
+
+        [JsonPropertyName("subtitle")]
+        public MultilingualText subtitle { get; set; }
+
+        [JsonPropertyName("disp_subtitle")]
+        public string? dispSubtitle { get; set; }
+
+        [JsonPropertyName("disp_description")]
+        public string? dispDescription { get; set; }
+
+        [JsonPropertyName("disp_extratext")]
+        public string? dispExtratext { get; set; }
+
         [JsonPropertyName("start")]
         public long startTime { get; set; }
 

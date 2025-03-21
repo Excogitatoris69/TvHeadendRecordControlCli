@@ -7,6 +7,11 @@ namespace CliTvhRecControlDomain.Dto
         public string uuid { get; set; }
         public string channelName { get; set; }
         public string title { get; set; }
+        public string? description { get; set; }
+        public string? dispExtratext { get; set; }
+        public string? dispDescription { get; set; }
+        public string? dispSubtitle { get; set; }
+        public string? subtitle { get; set; }
         public long startTime { get; set; }
         public long stoptime { get; set; }
         public long startTimeReal { get; set; }

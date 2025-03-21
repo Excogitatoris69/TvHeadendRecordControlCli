@@ -25,6 +25,9 @@ namespace TvHeadendAdapter.Mapper
                 title = new MultilingualText(),
                 subtitle = new MultilingualText(),
                 description = new MultilingualText(),
+                dispDescription = dto.dispDescription,
+                dispSubtitle = dto.dispSubtitle,
+                dispExtratext = dto.dispExtratext,
                 comment=dto.comment,
             };
             entity.title.Language = new Dictionary<string, object>

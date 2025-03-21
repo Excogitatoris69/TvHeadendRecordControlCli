@@ -20,7 +20,7 @@ namespace TvhAdapter.JsonEntities
         /// <returns></returns>
         public string GetFirstTitle()
         {
-            string result = null;
+            string result = string.Empty;
             object obj = null;
             if (Language != null && Language.Count > 0)
             {

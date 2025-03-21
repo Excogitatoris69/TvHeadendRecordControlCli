@@ -4,7 +4,7 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup>
-    <ActiveDebugProfile>MainConsoleApp_01_Help</ActiveDebugProfile>
+    <ActiveDebugProfile>MainConsoleApp_06_dvrCreate</ActiveDebugProfile>
     <_LastSelectedProfileId>E:\eigenes\projekte\visualstudio\TvHeadend\CliTvhRecControl\MainConsoleApp\Properties\PublishProfiles\TargetDependent.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
 </Project>

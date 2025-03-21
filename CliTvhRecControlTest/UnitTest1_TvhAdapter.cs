@@ -58,9 +58,12 @@ namespace CliTvhRecControlTest
                 title = "Test1",
                 comment = "ein comment",
                 subtitle = "ein Subtitle",
-                description = "ein Description",
+                description = "eine Description",
+                dispDescription = "eine dispDescription",
+                dispExtratext = "eine dispExtratext",
+                dispSubtitle = "eine dispSubtitle",
                 dvrProfileUuid = aTvHDvrProfileDto.uuid, // hier anpassen an gültige Profil-ID
-                languageShort = "Und", 
+                languageShort = "ger",//Und 
             };
             //DateTime start = new DateTime(2024, 1, 2, 20, 15, 00);
             //DateTime stop = new DateTime(2024, 1, 2, 21, 45, 00);
@@ -103,5 +106,25 @@ namespace CliTvhRecControlTest
             Assert.IsNotNull(list);
         }
 
+        [TestMethod]
+        public void test_05_getDvrUpcominglist()
+        {
+            TvHAdapterImpl testTvhAdapterImpl = new TvHAdapterImpl();
+            testTvhAdapterImpl.connectionData = connectionData;
+            List<TvHDvrUpcomingDto> list = testTvhAdapterImpl.getDvrUpcominglist();
+            Assert.IsNotNull(list);
+            Assert.IsTrue(list.Count > 0);
+        }
+
+
+        [TestMethod]
+        public void test_06_getDvrEntryClass()
+        {
+            TvHAdapterImpl testTvhAdapterImpl = new TvHAdapterImpl();
+            testTvhAdapterImpl.connectionData = connectionData;
+            testTvhAdapterImpl.getDvrEntryClass();
+            
+            Assert.IsTrue(true);
+        }
     }
 }

@@ -38,6 +38,7 @@ namespace TvhAdapter
         private string APIPATH_DVRCONFIGGRID = "/api/dvr/config/grid";
         private string APIPATH_EPGEVENTSGRID = "/api/epg/events/grid";
         private string APIPATH_LIVESTREAM = "/stream/channel/";
+        private string APIPATH_DVRENTRYCLASS = "/api/dvr/entry/class";
         //---------------------------------------------
         private JsonSerializerOptions jsonSerializerOptions = null;
         private TvHConnectionDataDto? _connectionData;
@@ -96,6 +97,18 @@ namespace TvhAdapter
                 tvHResponseDto.errorMessage = apiResponseDto.errorMsg;
             }
             return tvHResponseDto;
+        }
+
+        public void getDvrEntryClass()
+        {
+            if (_connectionData is null)
+                throw new Exception(Messages.MESSAGE_NO_CONNECTION_DATA_SET);
+            RequestData requestData = new RequestData
+            {
+                apiPath = APIPATH_DVRENTRYCLASS,
+            };
+            Task<ApiResponseDto<string>> taskData = sendMessage<string>(requestData);
+            ApiResponseDto<string> apiResponseDto = taskData.Result;
         }
 
         public List<TvHChannelDto> getChannellist()

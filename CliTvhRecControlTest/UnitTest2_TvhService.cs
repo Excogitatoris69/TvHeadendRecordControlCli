@@ -65,6 +65,7 @@ namespace CliTvhRecControlTest
                 comment = "ein comment",
                 subtitle = "ein Subtitle",
                 description = "ein Description",
+                
                 //dvrProfileUuid = "97993e21300bdbe066435bd0408d4328", // hier anpassen an gültige Profil-ID
                                                                         // 97993e21300bdbe066435bd0408d4328   withoutPadding
                 dvrProfileName = "withoutPadding",
@@ -103,10 +104,10 @@ namespace CliTvhRecControlTest
         [TestMethod]
         public void test_06_getDvrUpcominglist()
         {
-            //List<TvHDvrUpcomingDto> list = tvhService.getDvrUpcominglist();
-            //Assert.IsNotNull(list);
-            //Assert.IsTrue(list.Count > 0);
-            
+            List<TvHDvrUpcomingDto> list = tvhService.getDvrUpcominglist();
+            Assert.IsNotNull(list);
+            Assert.IsTrue(list.Count > 0);
+
         }
 
     }

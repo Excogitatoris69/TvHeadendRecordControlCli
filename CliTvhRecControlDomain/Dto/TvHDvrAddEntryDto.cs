@@ -25,6 +25,9 @@
         public string title { get; set; }
         public string subtitle { get; set; }
         public string description { get; set; }
+        public string dispExtratext { get; set; }
+        public string dispDescription { get; set; }
+        public string dispSubtitle { get; set; }
         public string comment { get; set; }
         public string dvrProfileUuid { get; set; }
         public string dvrProfileName { get; set; }

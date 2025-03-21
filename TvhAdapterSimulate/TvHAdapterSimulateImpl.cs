@@ -273,7 +273,9 @@ namespace TvhAdapterSimulate
             _channelList.Add(tvHChannelDto2);
         }
 
-
-
+        public void getDvrEntryClass()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

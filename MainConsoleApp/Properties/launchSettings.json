@@ -26,7 +26,7 @@
     },
     "MainConsoleApp_06_dvrCreate": {
       "commandName": "Project",
-      "commandLineArgs": "--serverurl http://ptvheadend:9981 --username tvuser --password tvuser --command dvrcreate  --title \"Testaufnahme1\"  --starttimeHuman \"20.11.2024 20:15\" --endtimeHuman \"20.11.2024 22:00\" --channel \"ZDF HD\" --config \"97993e21300bdbe066435bd0408d4328\" --comment \"add by record control\" "
+      "commandLineArgs": "--serverurl http://ptvheadend:9981 --username tvuser --password tvuser --command dvrcreate  --title \"Testaufnahme1\"  --starttimeHuman \"20.04.2025 20:15\" --endtimeHuman \"20.04.2025 22:00\" --channel \"ZDF HD\" --config \"97993e21300bdbe066435bd0408d4328\" --comment \"add by record control\" --description \"Das ist meine Beschreibung.\" "
     },
     "MainConsoleApp_07_dvrCreate": {
       "commandName": "Project",
