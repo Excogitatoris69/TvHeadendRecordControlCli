@@ -16,3 +16,7 @@ For this purpose I developed the program AufnahmesteuerungTvHeadend. In this gui
 Function description
 
 The program AufnahmesteuerungTvHeadend receives the necessary parameters via the command line and sends them to the TV headend server via network communication. The Rest-Api-Interface provided by Tvheadend is used. AufnahmesteuerungTvHeadend provides the two main functions of creating a recording and deleting a recording. In addition, the program provides functions for exporting a list of station names and a list of all programmed programs. In the documentation I describe the program with all parameters as well as all technical details for those interested in technology.
+
+
+Release: 21.03.2025, Build 2.0.4 - Bug fixes
+
