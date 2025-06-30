@@ -1,4 +1,4 @@
 Version 2.0.5
 30.06.2025
-- Bugfix: Deaktivierung eines Default-Limit bei der Abfrage des API bei Channels.
+- Bugfix: Issue #2 Deaktivierung eines Default-Limit bei der Abfrage des API bei Channels.
 
