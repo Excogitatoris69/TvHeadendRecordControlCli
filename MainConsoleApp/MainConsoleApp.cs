@@ -30,7 +30,7 @@ namespace Credentials
             MainConsoleApp me = new MainConsoleApp();
             System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
             FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
-            buildString = "Build: 21.03.2025 Release: "+fvi.FileVersion;
+            buildString = "Build: 30.06.2025 Release: "+fvi.FileVersion;
             me.showVersion();
             if (me.offlineTest)
                 Console.WriteLine("***** Achtung: Test ohne realen TVH-Server. *********");

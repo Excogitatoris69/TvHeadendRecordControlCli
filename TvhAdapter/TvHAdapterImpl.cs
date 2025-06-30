@@ -113,12 +113,14 @@ namespace TvhAdapter
 
         public List<TvHChannelDto> getChannellist()
         {
-            List<TvHChannelDto> channelList = new List<TvHChannelDto>(100);
+            List<TvHChannelDto> channelList = new List<TvHChannelDto>(2000);
             if (_connectionData is null)
                 throw new Exception(Messages.MESSAGE_NO_CONNECTION_DATA_SET);
+            string apitPathWithLimitFilter = string.Format("{0}?limit=2000&start=0", APIPATH_CHANNELGRIDLIST);
             RequestData requestData = new RequestData
             {
-                apiPath = APIPATH_CHANNELGRIDLIST,
+                //apiPath = APIPATH_CHANNELGRIDLIST,
+                apiPath = apitPathWithLimitFilter,
             };
 
             Task<ApiResponseDto<ChannelEntryList>> taskData = sendMessage<ChannelEntryList>(requestData);
